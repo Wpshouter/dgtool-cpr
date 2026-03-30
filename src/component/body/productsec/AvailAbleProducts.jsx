@@ -1,55 +1,13 @@
 import React from "react";
-import designTool from "../../../assets/products/design-tool.png";
-import { FaCheck } from "react-icons/fa";
+
+import ProductCard from "../UI/ProductCard";
 const AvailAbleProducts = ({ products }) => {
   return (
     <div className='max-w-11/12 lg:max-w-8/12 mx-auto grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-8 my-8'>
       {console.log(products)}
       {products.map((product, index) => {
         return (
-          <div key={index} className="card bg-base-100 shadow-sm rounded-xl border border-gray-100 px-6 pb-6 pt-1">
-            <div className="card-body p-2">
-              <div className="text-right w-full">
-              
-                <div className="badge badge-warning ">{product.tag}</div>
-              </div>
-
-              <div className="w-15 h-15 p-4 rounded-full border border-gray-100">
-                <img className="w-10" src={designTool} />{" "}
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900">
-                {product.name}
-              </h2>
-              <p className="text-gray-600 my-3">
-               {product.description}
-              </p>
-              <span>
-                <strong className="font-bold text-gray-900 text-xl">${product.price}</strong>
-                <span className="text-gray-600">/{product.period}</span>
-              </span>
-              {
-                product.features.map((feature, indx) => {
-                    return(
-                            <span className="text-gray-600 flex gap-2 items-center">
-            
-                <span className="text-green-500">
-                  <FaCheck />
-                </span>
-                {feature}
-              </span>
-                    );
-                })
-              }
-          
-             
-              <a
-                className=" mt-8 w-full btn rounded-full text-white btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] transition-all duration-300 
-   hover:from-[#9514FA] hover:to-[#4F39F6] "
-              >
-                Buy Now
-              </a>
-            </div>
-          </div>
+          <ProductCard product={product} index={index} />
         );
       })}
     </div>
