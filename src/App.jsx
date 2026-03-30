@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import NavBar from './component/header/navbar'
 import './App.css'
 
 function App() {
@@ -9,7 +7,7 @@ function App() {
 
   return (
     <>
-    <h2 class="bg-red-500">Hisadsad</h2>
+      <NavBar></NavBar>
     </>
   )
 }
