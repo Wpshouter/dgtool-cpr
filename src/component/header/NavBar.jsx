@@ -1,9 +1,10 @@
 import React from "react";
+import { FiShoppingCart } from "react-icons/fi";
 
 const NavBar = () => {
   return (
     <div className="bg-base-100 shadow-sm">
-    <div className="navbar bg-base-100 max-w-11/12 lg:max-w-10/12 mx-auto">
+    <div className="navbar bg-base-100 max-w-11/12 lg:max-w-9/12 mx-auto px-0">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -68,6 +69,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4">
+        <a className=""><FiShoppingCart /></a>
         <a className="text-[#101727] text-sm font-semibold">Login</a>
         <a className="btn rounded-full text-white btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] ">Get Started</a>
       </div>

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Perfect for individuals starting out.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Basic analytics", "Email support", "Community access"],
+    "icon": "📈"
+  },
+  {
+    "id": 2,
+    "name": "Pro Plan",
+    "description": "Advanced features for growing teams.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "Priority support", "Export to PDF"],
+    "icon": "🚀"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Suite",
+    "description": "Comprehensive solution for large organizations.",
+    "price": 199,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Unlimited users", "Dedicated account manager", "Custom integrations"],
+    "icon": "🏢"
+  },
+  {
+    "id": 4,
+    "name": "Resume Builder",
+    "description": "AI-powered resume creation tool.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["ATS optimization", "Export to PDF", "Cover letter templates"],
+    "icon": "📄"
+  },
+  {
+    "id": 5,
+    "name": "Design Kit",
+    "description": "Creative assets for designers.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["500+ icons", "Custom color palettes", "UI components"],
+    "icon": "🎨"
+  },
+  {
+    "id": 6,
+    "name": "Marketing Booster",
+    "description": "Tools to enhance your campaigns.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Email automation", "A/B testing", "Analytics dashboard"],
+    "icon": "📢"
+  },
+  {
+    "id": 7,
+    "name": "Cloud Storage",
+    "description": "Secure and scalable storage solution.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["1TB storage", "File sharing", "Version history"],
+    "icon": "☁️"
+  },
+  {
+    "id": 8,
+    "name": "Developer Tools",
+    "description": "Essential tools for modern web developers.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["API access", "Debugging suite", "Performance monitoring"],
+    "icon": "💻"
+  }
+]
