@@ -4,7 +4,7 @@ import productImg from '../../../assets/package.png'
 import RocketImg from '../../../assets/rocket.png'
 const GetStartedCards = () => {
     return (
-              <div className=' grid grid-cols-2  md:grid-cols-2 lg:grid-cols-3 justify-center gap-10'>
+              <div className=' grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 justify-center gap-10'>
                <div className='bg-white shadow-sm rounded-xl border border-gray-50 p-5 text-center'>
                             <div className='w-[40px] h-[40px] rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] float-right text-white'  ><p className='mt-2'>01</p></div>
                             <div className=' relative w-full flex justify-center pt-5 pb-10'>

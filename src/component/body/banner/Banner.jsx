@@ -4,7 +4,7 @@ import Rectangle from "../../../assets/Rectangle-2.png";
 import Play from "../../../assets/Play.png";
 const Banner = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-30">
       <div className="max-w-11/12 lg:max-w-9/12 mx-auto flex flex-col md:flex-row justify-between gap-4  items-center py-10 lg:py-20">
         <div className="leftside">
           <div className="rounded-full bg-[#E1E7FF] p-2 flex items-center gap-2 justify-center max-w-[100%] md:max-w-[90%] lg:max-w-[320px] mb-8">
@@ -22,8 +22,9 @@ const Banner = () => {
             software—all in one place. Start creating faster today.<br></br>
             Explore Products
           </p>
-          <div className="flex items-center gap-5">
-            <a className="btn rounded-full text-white btn-lg bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-semibold">
+          <div className="flex items-center flex-col md:flex-row gap-5">
+            <a className="btn rounded-full text-white btn-lg bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-semibold transition-all duration-300 
+   hover:from-[#9514FA] hover:to-[#4F39F6]">
               Explore Products
             </a>
             <a
@@ -36,7 +37,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="right_img shadow-2xl">
-          <img className="w-full" src={bannerimg} />
+          <img className="w-[95%]" src={bannerimg} />
         </div>
       </div>
     </div>
