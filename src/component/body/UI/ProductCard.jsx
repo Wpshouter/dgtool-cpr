@@ -3,17 +3,18 @@ import designTool from "../../../assets/products/design-tool.png";
 import { FaCheck } from "react-icons/fa";
 const ProductCard = ({ product, index, setcartItemNumber, cartItemNumber, cartedProduct, setcartedProduct }) => {
   const [isCarted, setisCarted] = useState(false);
+
   const handleCartProduct = (e)=>{
     console.log(e, 'asdsadsad');
     e.preventDefault();
       setisCarted(true);
       setcartItemNumber(cartItemNumber+1);
       setcartedProduct([...cartedProduct, product]);
-  }
+  };
 
   return (
     <div
-      key={index}
+      
       className="card bg-base-100 shadow-sm rounded-xl border border-gray-100 px-6 pb-6 pt-1"
     >
       <div className="card-body p-2">
@@ -43,7 +44,7 @@ const ProductCard = ({ product, index, setcartItemNumber, cartItemNumber, carted
           );
         })}
 
-        <button
+        <button  type="button"
           onClick={(e) => handleCartProduct(e)}
           className=" mt-8 w-full btn rounded-full text-white btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] transition-all duration-300 
    hover:from-[#9514FA] hover:to-[#4F39F6] "

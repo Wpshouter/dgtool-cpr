@@ -27,17 +27,17 @@ const AvailAbleProducts = ({ products, setcartItemNumber, cartItemNumber }) => {
       </div>
       {
         (productOrCart === 'product') ?
-          <div className="max-w-11/12 lg:max-w-8/12 mx-auto grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-8 my-8">
+          <div className="max-w-11/12 lg:max-w-10/12 mx-auto grid grid-cols-2 md:grid-col-2 lg:grid-cols-3 gap-8 my-8">
               {console.log(products)}
     
       {products.map((product, index) => {
         return (
-          <ProductCard product={product} key={index} setcartItemNumber={setcartItemNumber} cartItemNumber={cartItemNumber} cartedProduct={cartedProduct} setcartedProduct = {setcartedProduct} />
+          <ProductCard product={product} key={product.id} setcartItemNumber={setcartItemNumber} cartItemNumber={cartItemNumber} cartedProduct={cartedProduct} setcartedProduct={setcartedProduct} />
         );
       })}
       </div>
       :
-      <CartCard   cartedProduct={cartedProduct} setcartedProduct = {setcartedProduct} />
+      <CartCard  cartItemNumber={cartItemNumber}  cartedProduct={cartedProduct} setcartedProduct={setcartedProduct} setcartItemNumber={setcartItemNumber} />
       }
     
   

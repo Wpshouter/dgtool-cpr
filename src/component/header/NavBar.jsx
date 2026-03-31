@@ -72,9 +72,10 @@ const NavBar = ({cartItemNumber}) => {
       <div className="navbar-end gap-4">
         <div className="relative inline-block">
   <FiShoppingCart className="text-lg" />
+  {(cartItemNumber > 0) ?
   <span className="text-[10px] absolute -top-2 -right-3 bg-red-500 text-white  rounded-full px-1.5">
-    {cartItemNumber}
-  </span>
+    {cartItemNumber} 
+  </span> : ''}
 </div>
 
         

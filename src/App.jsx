@@ -4,15 +4,19 @@ import Banner from './component/body/banner/Banner'
 import './App.css'
 import Stats from './component/body/stats/Stats'
 import Product from './component/body/productsec/products'
+import GetStartedSection from './component/body/getStartedSection/GetStartedSection'
+import PricingSection from './component/body/pricingSec/PricingSection'
+import Footer from './component/footer/Footer'
 
 const fetchProduct = async()=> {
   const res = await fetch('/data/product.json');
   return res.json();
 }
+const productPromise = fetchProduct(); 
 
 function App() {
   const [count, setCount] = useState(0)
-  const productPromise = fetchProduct();
+  //const productPromise = fetchProduct();
   const [cartItemNumber, setcartItemNumber] = useState(0);
   return (
     <>
@@ -22,7 +26,9 @@ function App() {
       <Suspense fallback={<span className='loading loading-dots loading-xl'></span>}>
                <Product productPromise={productPromise} setcartItemNumber = {setcartItemNumber} cartItemNumber = {cartItemNumber} />
       </Suspense>
-   
+      <GetStartedSection/>
+      <PricingSection/>
+      <Footer/>
    
     </>
   )
