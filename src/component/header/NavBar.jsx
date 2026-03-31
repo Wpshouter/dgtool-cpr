@@ -4,8 +4,8 @@ import { FiShoppingCart } from "react-icons/fi";
 const NavBar = ({cartItemNumber}) => {
   console.log(cartItemNumber, 'cartItemNumber');
   return (
-    <div className="bg-base-100 shadow-sm">
-    <div className="navbar bg-base-100 max-w-11/12 lg:max-w-9/12 mx-auto px-0">
+    <div className="bg-base-100 shadow-sm border-b border-b-gray-200">
+    <div className="navbar bg-base-100 max-w-11/12 lg:max-w-9/12 mx-auto px-0 ">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,23 +29,21 @@ const NavBar = ({cartItemNumber}) => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
+           <li>
+            <a className="text-[#101727] text-sm font-semibold">Products</a>
+          </li>
+      <li>
+            <a className="text-[#101727] text-sm font-semibold">Features</a>
+          </li>
             <li>
-              <a>Item 1</a>
-            </li>
+            <a className="text-[#101727] text-sm font-semibold">Pricing</a>
+          </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            <a className="text-[#101727] text-sm font-semibold">Testimonial</a>
+          </li>
+              <li>
+            <a className="text-[#101727] text-sm font-semibold">FAQ</a>
+          </li>
           </ul>
         </div>
         <a className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-3xl font-bold py-4">DigiTools</a>

@@ -15,7 +15,9 @@ const PricingCard = () => {
                       <button className='mt-auto w-full btn py-6  rounded-full text-white btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] transition-all duration-300 
    hover:from-[#9514FA] hover:to-[#4F39F6]'>Get Started Free</button>
                 </div>
-                       <div className='flex flex-col rounded-xl bg-gray-100 p-8 text-left bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>
+                       <div className='flex relative flex-col rounded-xl bg-gray-100 p-8 text-left bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>
+                        <div className="badge text-gray-900 badge-warning rounded-xl absolute top-[-10px] left-[34%]">Most Popular</div>
+
                       <h2 className='font-bold text-xl text-white'>Pro</h2>
                       <p className="text-gray-50 mt-1 mb-6 pb-0">Best for professionals</p>
                       <p className='text-xl text-white mb-6'><strong className='text-4xl font-bold text-white'>$29</strong>/Month </p>
@@ -28,13 +30,14 @@ const PricingCard = () => {
    hover:from-[#9514FA] hover:to-[#4F39F6]'>Start Pro Trail</button>
                 </div>
                        <div className='flex flex-col rounded-xl bg-gray-100 p-8 text-left'>
-                      <h2 className='font-bold text-xl text-gray-900'>Starter</h2>
-                      <p className="text-gray-600 mt-1 mb-6 pb-0">Perfect for getting started</p>
-                      <p className='text-xl text-gray-600 mb-6'><strong className='text-4xl font-bold text-gray-900'>$0</strong>/Month </p>
-                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>Access to 10 free tools</span>
-                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>Basic templates</span>
-                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>Community support</span>
-                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>1 project per month</span>
+                      <h2 className='font-bold text-xl text-gray-900'>Enterprise</h2>
+                      <p className="text-gray-600 mt-1 mb-6 pb-0">For teams and businesses</p>
+                      <p className='text-xl text-gray-600 mb-6'><strong className='text-4xl font-bold text-gray-900'>$99</strong>/Month </p>
+                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>Everything in Pro</span>
+                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>Team collaboration</span>
+                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>Custom integrations</span>
+                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>SLA guarantee</span>
+                      <span className="text-gray-600 flex gap-2 items-center"><span className="text-green-500"><FaCheck /></span>Dedicated support</span>
                       <button className=' mt-[70px] w-full btn py-6  rounded-full text-white btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] transition-all duration-300 
    hover:from-[#9514FA] hover:to-[#4F39F6]'>Contact Sales</button>
                 </div>

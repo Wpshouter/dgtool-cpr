@@ -13,7 +13,7 @@ const Banner = () => {
               New: AI-Powered Tools Available
             </p>
           </div>
-          <h2 className="text-gray-900 text-5xl md:text-5xl lg:text-7xl font-bold mb-8">
+          <h2 className="text-gray-900 text-5xl md:text-5xl lg:text-6xl font-bold mb-8">
             Supercharge Your <br></br> <span>Digital Workflow</span>
           </h2>
           <p className="text-gray-600 mb-8">
