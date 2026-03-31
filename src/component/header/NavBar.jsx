@@ -1,7 +1,8 @@
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 
-const NavBar = () => {
+const NavBar = ({cartItemNumber}) => {
+  console.log(cartItemNumber, 'cartItemNumber');
   return (
     <div className="bg-base-100 shadow-sm">
     <div className="navbar bg-base-100 max-w-11/12 lg:max-w-9/12 mx-auto px-0">
@@ -69,7 +70,14 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4">
-        <a className=""><FiShoppingCart /></a>
+        <div className="relative inline-block">
+  <FiShoppingCart className="text-lg" />
+  <span className="text-[10px] absolute -top-2 -right-3 bg-red-500 text-white  rounded-full px-1.5">
+    {cartItemNumber}
+  </span>
+</div>
+
+        
         <a className="text-[#101727] text-sm font-semibold">Login</a>
         <a className="btn rounded-full text-white btn-md bg-linear-to-r from-[#4F39F6] to-[#9514FA] ">Get Started</a>
       </div>

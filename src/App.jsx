@@ -9,17 +9,20 @@ const fetchProduct = async()=> {
   const res = await fetch('/data/product.json');
   return res.json();
 }
+
 function App() {
   const [count, setCount] = useState(0)
   const productPromise = fetchProduct();
+  const [cartItemNumber, setcartItemNumber] = useState(0);
   return (
     <>
-      <NavBar/>
+      <NavBar cartItemNumber={cartItemNumber} />
       <Banner/>
       <Stats/>
       <Suspense fallback={<span className='loading loading-dots loading-xl'></span>}>
-               <Product productPromise={productPromise} />
+               <Product productPromise={productPromise} setcartItemNumber = {setcartItemNumber} cartItemNumber = {cartItemNumber} />
       </Suspense>
+   
    
     </>
   )

@@ -8,29 +8,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Basic analytics", "Email support", "Community access"],
-    "icon": "📈"
-  },
-  {
-    "id": 2,
-    "name": "Pro Plan",
-    "description": "Advanced features for growing teams.",
-    "price": 29,
-    "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
-    "features": ["100+ templates", "Priority support", "Export to PDF"],
-    "icon": "🚀"
-  },
-  {
-    "id": 3,
-    "name": "Enterprise Suite",
-    "description": "Comprehensive solution for large organizations.",
-    "price": 199,
-    "period": "monthly",
-    "tag": "best seller",
-    "tagType": "best seller",
-    "features": ["Unlimited users", "Dedicated account manager", "Custom integrations"],
-    "icon": "🏢"
+    "icon": "https://i.ibb.co.com/93n7fjBW/design-tool.png"
   },
   {
     "id": 4,
@@ -41,7 +19,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["ATS optimization", "Export to PDF", "Cover letter templates"],
-    "icon": "📄"
+    "icon": "https://i.ibb.co.com/5xwDB9dF/writing-2327400-1.png"
   },
   {
     "id": 5,
@@ -52,7 +30,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["500+ icons", "Custom color palettes", "UI components"],
-    "icon": "🎨"
+    "icon": "https://i.ibb.co.com/5WdMXy9X/social-media.png"
   },
   {
     "id": 6,
@@ -63,7 +41,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Email automation", "A/B testing", "Analytics dashboard"],
-    "icon": "📢"
+    "icon": "https://i.ibb.co.com/sG6s1mp/portfolio.png"
   },
   {
     "id": 7,
@@ -74,7 +52,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["1TB storage", "File sharing", "Version history"],
-    "icon": "☁️"
+    "icon": "https://i.ibb.co.com/ch1pHTk3/operation.png"
   },
   {
     "id": 8,
@@ -85,6 +63,6 @@
     "tag": "new",
     "tagType": "new",
     "features": ["API access", "Debugging suite", "Performance monitoring"],
-    "icon": "💻"
+    "icon": "https://i.ibb.co.com/93n7fjBW/design-tool.png"
   }
 ]
