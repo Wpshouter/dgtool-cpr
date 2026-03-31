@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Starter Plan",
-    "description": "Perfect for individuals starting out.",
+    "description": "Begin your journey with simple tools designed to help you grow confidently.",
     "price": 9,
     "period": "monthly",
     "tag": "new",
@@ -13,7 +13,7 @@
   {
     "id": 4,
     "name": "Resume Builder",
-    "description": "AI-powered resume creation tool.",
+    "description": "Craft professional resumes with AI guidance that ensures you stand out.",
     "price": 49,
     "period": "one-time",
     "tag": "popular",
@@ -24,7 +24,7 @@
   {
     "id": 5,
     "name": "Design Kit",
-    "description": "Creative assets for designers.",
+    "description": "Access creative assets and UI components to elevate your design projects.",
     "price": 99,
     "period": "yearly",
     "tag": "new",
@@ -35,7 +35,7 @@
   {
     "id": 6,
     "name": "Marketing Booster",
-    "description": "Tools to enhance your campaigns.",
+    "description": "Enhance campaigns with automation, testing, and analytics for better results.",
     "price": 59,
     "period": "monthly",
     "tag": "best seller",
@@ -46,7 +46,7 @@
   {
     "id": 7,
     "name": "Cloud Storage",
-    "description": "Secure and scalable storage solution.",
+    "description": "Store, share, and protect your files securely with scalable cloud solutions.",
     "price": 19,
     "period": "monthly",
     "tag": "popular",
@@ -57,7 +57,7 @@
   {
     "id": 8,
     "name": "Developer Tools",
-    "description": "Essential tools for modern web developers.",
+    "description": "Boost productivity with debugging, API access, and performance monitoring.",
     "price": 79,
     "period": "yearly",
     "tag": "new",

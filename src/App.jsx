@@ -7,6 +7,8 @@ import Product from './component/body/productsec/products'
 import GetStartedSection from './component/body/getStartedSection/GetStartedSection'
 import PricingSection from './component/body/pricingSec/PricingSection'
 import Footer from './component/footer/Footer'
+import { ToastContainer } from 'react-toastify'
+import CopyRight from './component/footer/CopyRight'
 
 const fetchProduct = async()=> {
   const res = await fetch('/data/product.json');
@@ -28,7 +30,9 @@ function App() {
       </Suspense>
       <GetStartedSection/>
       <PricingSection/>
+      <ToastContainer/>
       <Footer/>
+      <CopyRight/>
    
     </>
   )

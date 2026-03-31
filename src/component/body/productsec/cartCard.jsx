@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
 import SingleCartCard from './singleCartCard';
+import { toast } from 'react-toastify';
 
 const CartCard = ({cartedProduct, setcartedProduct,setcartItemNumber, cartItemNumber}) => {
     console.log(cartedProduct, "cartedProduct");
@@ -9,6 +10,7 @@ const CartCard = ({cartedProduct, setcartedProduct,setcartItemNumber, cartItemNu
     const handleProccedToChekcout = () => {
         setcartItemNumber(0);
         setcartedProduct([]);
+        toast('Checkout is Successfull');
     }
     return (
         

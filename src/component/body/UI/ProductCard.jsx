@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import designTool from "../../../assets/products/design-tool.png";
 import { FaCheck } from "react-icons/fa";
+import { toast } from "react-toastify";
 const ProductCard = ({ product, index, setcartItemNumber, cartItemNumber, cartedProduct, setcartedProduct }) => {
   const [isCarted, setisCarted] = useState(false);
 
@@ -10,6 +11,7 @@ const ProductCard = ({ product, index, setcartItemNumber, cartItemNumber, carted
       setisCarted(true);
       setcartItemNumber(cartItemNumber+1);
       setcartedProduct([...cartedProduct, product]);
+      toast(`${product.name} has been added to cart.`);
   };
 
   return (
@@ -19,7 +21,7 @@ const ProductCard = ({ product, index, setcartItemNumber, cartItemNumber, carted
     >
       <div className="card-body p-2">
         <div className="text-right w-full">
-          <div className="badge badge-warning ">{product.tag}</div>
+          <div   className={`badge text-white ${product.id % 2 === 0 ? "badge-error " : 'badge-success' } `} >{product.tag}</div>
         </div>
 
         <div className="w-15 h-15 p-4 rounded-full border border-gray-100">

@@ -27,7 +27,7 @@ const AvailAbleProducts = ({ products, setcartItemNumber, cartItemNumber }) => {
       </div>
       {
         (productOrCart === 'product') ?
-          <div className="max-w-11/12 lg:max-w-10/12 mx-auto grid grid-cols-2 md:grid-col-2 lg:grid-cols-3 gap-8 my-8">
+          <div className="max-w-11/12 lg:max-w-9/12 mx-auto grid grid-cols-2 md:grid-col-2 lg:grid-cols-3 gap-8 my-8">
               {console.log(products)}
     
       {products.map((product, index) => {

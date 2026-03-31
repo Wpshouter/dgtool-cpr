@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const SingleCartCard = ({cartedProduct,setcartedProduct,setcartItemNumber, cartItemNumber}) => {
     const handleRemoveCard = (product) => {
@@ -7,6 +8,7 @@ const SingleCartCard = ({cartedProduct,setcartedProduct,setcartItemNumber, cartI
         //console.log(filteredCartProduct);
         setcartItemNumber(cartItemNumber - 1);
         setcartedProduct(filteredCartProduct);
+        toast(`${product.name} has been removed from the cart.`);
     }
     return (
 
